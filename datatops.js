@@ -1,8 +1,9 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-    typeof define === 'function' && define.amd ? define(factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Datatops = factory());
-})(this, (function () { 'use strict';
+        typeof define === 'function' && define.amd ? define(factory) :
+            (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Datatops = factory());
+})(this, (function () {
+    'use strict';
 
     /**
     Datatops.js is a JavaScript library for sending data to a Datatops database
@@ -94,7 +95,7 @@
          * @returns {Promise} - A Promise that resolves with the response.
          */
         store(data, callback) {
-            const url = `${this.server}.com/api/v1/projects/${this.project}`;
+            const url = `${this.server}/api/v1/projects/${this.project}`;
             const options = {
                 method: "POST",
                 headers: {

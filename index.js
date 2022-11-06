@@ -88,7 +88,7 @@ class Datatops {
      * @returns {Promise} - A Promise that resolves with the response.
      */
     store(data, callback) {
-        const url = `${this.server}.com/api/v1/projects/${this.project}`;
+        const url = `${this.server}/api/v1/projects/${this.project}`;
         const options = {
             method: "POST",
             headers: {
