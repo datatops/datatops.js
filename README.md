@@ -1,7 +1,42 @@
 # Datatops.js
 
+## Usage
+
+Include the `datatops.js` file in your HTML page by downloading it and linking
+to it in a `<script>` tag:
+
+```html
+<script src="datatops.js"></script>
+```
+
+Alternatively, you can use this CDN link:
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/datatops/datatops.js/datatops.js"></script>
+```
+
+Then, use the `Datatops` object to access the library. Put this code somewhere in a `<script>` tag in your project:
+
+```js
+const datatops = new Datatops({
+    server: "https://my-datatops-website.com",
+    project: "my-datatops-survey",
+    userToken: "1mg9dj4b",
+});
+```
+
+Then you can use this code later on to save data:
+
+```js
+datatops.store({
+    favoriteNumber: 42,
+    favoriteColor: "blue",
+    dateOfSurveySubmission: new Date(),
+});
+```
+
 ## Building
 
 ```shell
-rollup index.js --file bundle.js --format umd --name "datatops"
+rollup index.js --file bundle.js --format umd --name "Datatops"
 ```
