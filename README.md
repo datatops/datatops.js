@@ -12,7 +12,7 @@ to it in a `<script>` tag:
 Alternatively, you can use this CDN link:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/datatops/datatops.js@v0.1.0/datatops.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/datatops/datatops.js@v0.1.2/datatops.js"></script>
 ```
 
 Then, use the `Datatops` object to access the library. Put this code somewhere in a `<script>` tag in your project:
