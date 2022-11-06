@@ -16,7 +16,7 @@
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "X-Datatops-User-Key": DATATOPS_USER_KEY
+            "X-User-Key": DATATOPS_USER_KEY
         },
         body: JSON.stringify(DATA),
     });
@@ -100,7 +100,7 @@
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "X-Datatops-User-Key": this.userKey
+                    "X-User-Key": this.userKey
                 },
                 body: JSON.stringify(data),
             };
