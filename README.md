@@ -6,12 +6,6 @@ Include the `datatops.js` file in your HTML page by downloading it and linking
 to it in a `<script>` tag:
 
 ```html
-<script src="datatops.js"></script>
-```
-
-Alternatively, you can use this CDN link:
-
-```html
 <script src="https://cdn.jsdelivr.net/gh/datatops/datatops.js@v0.1.2/datatops.js"></script>
 ```
 
@@ -21,7 +15,7 @@ Then, use the `Datatops` object to access the library. Put this code somewhere i
 const datatops = new Datatops({
     server: "https://my-datatops-website.com",
     project: "my-datatops-survey",
-    userToken: "1mg9dj4b",
+    userKey: "1mg9dj4b",
 });
 ```
 
